@@ -3,14 +3,18 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": [
+    "axe/forms": [
       "default",
       {
-        "ignore": [
-          "-ms-text-size-adjust",
-          "-webkit-text-size-adjust"
-        ]
+        "label": "off"
       }
-    ]
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "disown-opener": "off"
   }
 }
