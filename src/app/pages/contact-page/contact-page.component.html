@@ -9,7 +9,7 @@
 
     <div class="contact-row">
         <div>
-            <form method="POST" action="https://formsubmit.co/e7650767e0d10363bed34a56a6a2fbdb">
+            <!-- <form method="POST" action="https://formsubmit.co/e7650767e0d10363bed34a56a6a2fbdb">
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col">
@@ -27,7 +27,24 @@
                 </div>
 
                 <button type="submit" value="Send Request" class="btn btn-lg btn-dark btn-block">Submit</button>
-            </form>
+            </form> -->
+
+            <form target="_blank" >
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input  type="text" name="name" [formControl]="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                      <input type="email" name="email" [formControl]="email"  class="form-control" placeholder="Email Address" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Your Message" [formControl]="message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block" (click)="submitForm()">Submit Form</button>
+              </form>
         </div>
         <div>
             <img src="../../../assets/images/deerSheep.png" width="250" height="250" alt="image">
