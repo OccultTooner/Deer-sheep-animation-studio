@@ -23,10 +23,17 @@ export class ContactPageComponent implements OnInit {
   submitForm(){
     if(this.name.valid&&this.email.valid&&this.message.valid){
       this.emailHttp.sendEmail(this.name.value, this.email.value,this.message.value);
-
+      this.clearForm();
     }else{
       console.log('error');
     }
+
+ 
+  }
+  clearForm(){
+    this.name.setValue('');
+    this.email.setValue('');
+    this.message.setValue('');
   }
 
 }
