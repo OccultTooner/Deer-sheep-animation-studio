@@ -323,7 +323,7 @@ html {
 }
 
 body {
-    font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+    font-family: CURSIVE;
     font-size: 14px;
     line-height: 1.78;
     color: #555;
@@ -935,19 +935,19 @@ pre code {
 
 @media (min-width:768px) {
     .container {
-        width: 750px
+        width: 550px
     }
 }
 
 @media (min-width:992px) {
     .container {
-        width: 970px
+        width: 750px
     }
 }
 
 @media (min-width:1200px) {
     .container {
-        width: 1170px
+        width: 950px
     }
 }
 
@@ -5938,3 +5938,12 @@ main {
 }
 
 /*# sourceMappingURL=main.85741bff.map*/
+
+.spaceBlock{
+        position: static;
+        overflow: hidden;
+        background-color: #202020;
+        width: 100vw;
+        height: 17vh;
+        z-index: 90;
+}
